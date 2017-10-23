@@ -4,48 +4,34 @@ import lv.javaguru.ph.core.commands.orders.CreateOrderCommand;
 import lv.javaguru.ph.core.commands.orders.CreateOrderResult;
 import lv.javaguru.ph.core.commands.orders.GetOrderCommand;
 import lv.javaguru.ph.core.commands.orders.GetOrderResult;
-import lv.javaguru.ph.integrations.rest.dto.OrderDTO;
 import lv.javaguru.ph.core.services.CommandExecutor;
 import lv.javaguru.ph.integrations.rest.api.RESTResource;
-import lv.javaguru.ph.integrations.rest.api.OrderResource;
+import lv.javaguru.ph.integrations.rest.dto.OrderDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import javax.ws.rs.*;
-
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
-
-@Component
-@Path(RESTResource.API_PATH)
-public class OrderResourceImpl implements OrderResource {
-
-    private CommandExecutor commandExecutor;
+@RestController
+@RequestMapping(value = RESTResource.API_PATH)
+public class OrderResourceImpl {
 
     @Autowired
-    public OrderResourceImpl(CommandExecutor commandExecutor) {
-        this.commandExecutor = commandExecutor;
-    }
+    private CommandExecutor commandExecutor;
 
-    @POST
-    @Consumes(APPLICATION_JSON)
-    @Produces(APPLICATION_JSON)
-    @Path("/orders")
-    public OrderDTO create(OrderDTO orderDTO) {
+    @RequestMapping(value = "/orders", method = RequestMethod.POST)
+    public ResponseEntity<OrderDTO> create(@RequestBody OrderDTO orderDTO) {
         CreateOrderCommand command = new CreateOrderCommand(
                 orderDTO.getMsisdn(), orderDTO.getRoutingNumber(), orderDTO.getActivationDate()
         );
         CreateOrderResult result = commandExecutor.execute(command);
-        return result.getOrder();
+        return ResponseEntity.ok(result.getOrder());
     }
 
-    @GET
-    @Consumes(APPLICATION_JSON)
-    @Produces(APPLICATION_JSON)
-    @Path("/orders/{orderId}")
-    public OrderDTO get(@PathParam("orderId") Long orderId) {
+    @RequestMapping(value = "/orders/{orderId}", method = RequestMethod.GET)
+    public ResponseEntity<OrderDTO> get(@PathVariable("orderId") Long orderId) {
         GetOrderCommand command = new GetOrderCommand(orderId);
         GetOrderResult result = commandExecutor.execute(command);
-        return result.getOrder();
+        return ResponseEntity.ok(result.getOrder());
     }
 
 }

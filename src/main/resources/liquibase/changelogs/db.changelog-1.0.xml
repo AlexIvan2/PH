@@ -30,4 +30,11 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="3" author="alex" context="main">
+    <insert tableName="orders">
+        <column name="MSISDN" value="371298060897"/>
+        <column name="ROUTING_NUMBER" value="123545"/>
+    </insert>
+    </changeSet>
+
 </databaseChangeLog>
