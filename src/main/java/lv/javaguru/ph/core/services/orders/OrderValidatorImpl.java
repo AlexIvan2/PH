@@ -29,7 +29,9 @@ class OrderValidatorImpl implements OrderValidator {
     }
 
     private void validateActivationDate(Date activationDate) {
-        //TODO: Date validation
+        Date now = new Date();
+        boolean valid = now.before(activationDate);
+        checkArgument(valid, "Activation date should be in the future");
     }
 
 }

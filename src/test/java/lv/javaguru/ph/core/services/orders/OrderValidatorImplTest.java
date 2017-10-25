@@ -24,17 +24,17 @@ public class OrderValidatorImplTest {
 
     @Test
     public void validateShouldFailIfRoutingNumberIsNull() {
-        validateShouldFail(MSISDN, null, ACTIVATIONDATE, "Client password must not be null");
+        validateShouldFail(MSISDN, null, ACTIVATIONDATE, "Order routingNumber must not be null");
     }
 
     @Test
     public void validateShouldFailIfMsisdnIsEmpty() {
-        validateShouldFail("", ROUTINGNUMBER, ACTIVATIONDATE, "Client login must not be empty");
+        validateShouldFail("", ROUTINGNUMBER, ACTIVATIONDATE, "Order msisdn must not be empty");
     }
 
     @Test
     public void validateShouldFailIfRoutingNumberIsEmpty() {
-        validateShouldFail(MSISDN, "", ACTIVATIONDATE,"Client password must not be empty");
+        validateShouldFail(MSISDN, "", ACTIVATIONDATE,"Order routingNumber must not be empty");
     }
 
     private void validateShouldFail(String msisdn,
