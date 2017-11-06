@@ -20,8 +20,8 @@ class OrderServiceImpl implements OrderService {
                         String msisdn,
                         String routingNumber,
                         Date activationDate) {
-        orderValidator.validate(msisdn, routingNumber, activationDate);
-        //TODO:Add action validation
+        //orderValidator.validate(msisdn, routingNumber, activationDate);
+        orderValidator.validateNoMsisdn(routingNumber, activationDate);
         Order order = get(orderId);
         //order.setMsisdn(msisdn);
         order.setRoutingNumber(routingNumber);

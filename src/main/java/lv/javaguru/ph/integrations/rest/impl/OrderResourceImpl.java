@@ -18,13 +18,11 @@ public class OrderResourceImpl {
     @Autowired
     private CommandExecutor commandExecutor;
 
-    @RequestMapping(value = "/order", method = RequestMethod.POST)
-    public ResponseEntity<OrderDTO> create(@RequestBody OrderDTO orderDTO) {
-        CreateOrderCommand command = new CreateOrderCommand(
-                orderDTO.getMsisdn(), orderDTO.getRoutingNumber(), orderDTO.getActivationDate()
-        );
-        CreateOrderResult result = commandExecutor.execute(command);
-        return ResponseEntity.ok(result.getOrder());
+    @RequestMapping(value = "/orders", method = RequestMethod.GET)
+    public ResponseEntity<List<OrderDTO>> getAllOrders() {
+        GetAllOrdersCommand command = new GetAllOrdersCommand();
+        GetAllOrdersResult result = commandExecutor.execute(command);
+        return ResponseEntity.ok(result.getAllOrders());
     }
 
     @RequestMapping(value = "/order/{orderId}", method = RequestMethod.GET)
@@ -41,12 +39,13 @@ public class OrderResourceImpl {
         return ResponseEntity.ok(result.getAllOrders());
     }
 
-
-    @RequestMapping(value = "/orders", method = RequestMethod.GET)
-    public ResponseEntity<List<OrderDTO>> getAllOrders() {
-        GetAllOrdersCommand command = new GetAllOrdersCommand();
-        GetAllOrdersResult result = commandExecutor.execute(command);
-        return ResponseEntity.ok(result.getAllOrders());
+    @RequestMapping(value = "/order", method = RequestMethod.POST)
+    public ResponseEntity<OrderDTO> create(@RequestBody OrderDTO orderDTO) {
+        CreateOrderCommand command = new CreateOrderCommand(
+                orderDTO.getMsisdn(), orderDTO.getRoutingNumber(), orderDTO.getActivationDate()
+        );
+        CreateOrderResult result = commandExecutor.execute(command);
+        return ResponseEntity.ok(result.getOrder());
     }
 
     //TODO: Add action check
@@ -60,10 +59,10 @@ public class OrderResourceImpl {
     }
 
     @RequestMapping(value = "/order/undo/{msisdn}", method = RequestMethod.GET)
-    public ResponseEntity undo(@PathVariable("msisdn") String msisdn) {
+    public ResponseEntity<UndoOrderResult> undo(@PathVariable("msisdn") String msisdn) {
         UndoOrderCommand command = new UndoOrderCommand(msisdn);
         UndoOrderResult result = commandExecutor.execute(command);
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.ok(result);
     }
 
 }

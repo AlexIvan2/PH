@@ -6,4 +6,6 @@ public interface OrderValidator {
 
     void validate(String msisdn, String routingNumber, Date activationDate);
 
+    void validateNoMsisdn(String routingNumber, Date activationDate);
+
 }

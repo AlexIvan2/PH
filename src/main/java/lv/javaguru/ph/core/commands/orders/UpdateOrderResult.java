@@ -6,6 +6,7 @@ import lv.javaguru.ph.integrations.rest.dto.OrderDTO;
 public class UpdateOrderResult implements DomainCommandResult {
 
     private OrderDTO order;
+    private String message;
 
     public UpdateOrderResult(OrderDTO order) {
         this.order = order;
@@ -15,4 +16,11 @@ public class UpdateOrderResult implements DomainCommandResult {
         return order;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }

@@ -18,6 +18,12 @@ class OrderValidatorImpl implements OrderValidator {
         validateActivationDate(activationDate);
     }
 
+    @Override
+    public void validateNoMsisdn(String routingNumber, Date activationDate) {
+        validateRoutingNumber(routingNumber);
+        validateActivationDate(activationDate);
+    }
+
     private void validateMsisdn(String msisdn) {
         checkNotNull(msisdn, "Order msisdn must not be null");
         checkArgument(!StringUtils.isEmpty(msisdn), "Order msisdn must not be empty");

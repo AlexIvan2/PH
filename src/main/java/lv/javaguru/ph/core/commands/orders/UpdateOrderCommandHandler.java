@@ -1,6 +1,7 @@
 package lv.javaguru.ph.core.commands.orders;
 
 import lv.javaguru.ph.core.domain.Order;
+import lv.javaguru.ph.core.services.orders.OrderActionValidator;
 import lv.javaguru.ph.integrations.rest.dto.OrderDTO;
 import lv.javaguru.ph.core.services.DomainCommandHandler;
 import lv.javaguru.ph.core.services.orders.OrderService;
@@ -13,10 +14,12 @@ class UpdateOrderCommandHandler
 
     @Autowired private OrderService orderService;
     @Autowired private OrderConverter orderConverter;
+    @Autowired private OrderActionValidator orderActionValidator;
 
 
     @Override
     public UpdateOrderResult execute(UpdateOrderCommand command) {
+        orderActionValidator.validateUpdateAction(command.getMsisdn());
         Order order = orderService.update(
                 command.getOrderId(),
                 command.getMsisdn(),
