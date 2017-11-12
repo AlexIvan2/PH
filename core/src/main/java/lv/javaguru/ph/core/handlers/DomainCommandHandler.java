@@ -1,7 +1,7 @@
 package lv.javaguru.ph.core.handlers;
 
-import lv.javaguru.ph.core.commands.DomainCommand;
-import lv.javaguru.ph.core.commands.DomainCommandResult;
+import lv.javaguru.ph.core.api.DomainCommand;
+import lv.javaguru.ph.core.api.DomainCommandResult;
 
 public interface DomainCommandHandler<C extends DomainCommand, R extends DomainCommandResult> {
 

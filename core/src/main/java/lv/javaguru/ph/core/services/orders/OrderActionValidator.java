@@ -1,4 +1,4 @@
-package lv.javaguru.ph.core.services.users;
+package lv.javaguru.ph.core.services.orders;
 
 import lv.javaguru.ph.core.domain.Order;
 

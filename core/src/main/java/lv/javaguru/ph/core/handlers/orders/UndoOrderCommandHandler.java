@@ -5,13 +5,10 @@ import lv.javaguru.ph.core.api.orders.UndoOrderResult;
 import lv.javaguru.ph.core.domain.Order;
 
 import lv.javaguru.ph.core.handlers.DomainCommandHandler;
-import lv.javaguru.ph.core.services.users.OrderActionValidator;
-import lv.javaguru.ph.core.services.users.OrderService;
+import lv.javaguru.ph.core.services.orders.OrderActionValidator;
+import lv.javaguru.ph.core.services.orders.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.Date;
-import java.util.List;
 
 @Component
 class UndoOrderCommandHandler

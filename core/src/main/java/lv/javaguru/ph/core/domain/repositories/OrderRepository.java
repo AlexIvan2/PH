@@ -2,15 +2,12 @@ package lv.javaguru.ph.core.domain.repositories;
 
 import lv.javaguru.ph.core.domain.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
-import sun.security.provider.certpath.OCSPResponse;
 
-import java.util.Optional;
-
-import static lv.javaguru.ph.core.api.exceptons.ValidationErrorBuilder.createValidationError;
+import java.util.List;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
-//    Optional<Order> findOneByLogin(String login);
+    List<Order> findOneByMsisdn(String msisdn);
 //
 //    default Order getRequiredByLogin(String login) {
 //        return findOneByLogin(login)

@@ -1,9 +1,8 @@
-package lv.javaguru.ph.core.services.users;
+package lv.javaguru.ph.core.services.orders;
 
 import lv.javaguru.ph.core.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 
 import java.util.Date;
 import java.util.List;

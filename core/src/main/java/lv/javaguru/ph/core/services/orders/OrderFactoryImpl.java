@@ -1,18 +1,20 @@
-package lv.javaguru.ph.core.services.users;
+package lv.javaguru.ph.core.services.orders;
 
 import lv.javaguru.ph.core.domain.Order;
+import lv.javaguru.ph.core.domain.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+import static lv.javaguru.ph.core.domain.builders.OrderBuilder.createOrder;
 
 
 @Component
 class OrderFactoryImpl implements OrderFactory {
 
     @Autowired private OrderValidator orderValidator;
-    @Autowired private OrderDAO orderDAO;
+    @Autowired private OrderRepository orderRepository;
 
 
     @Override
@@ -23,7 +25,7 @@ class OrderFactoryImpl implements OrderFactory {
                 .withRoutingNumber(routingNumber)
                 .withActivationDate(activationDate)
                 .build();
-        orderDAO.create(order);
+        orderRepository.save(order);
         return order;
     }
 

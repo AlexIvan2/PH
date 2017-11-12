@@ -5,7 +5,7 @@ import lv.javaguru.ph.core.api.orders.GetAllOrdersCommand;
 import lv.javaguru.ph.core.api.orders.GetAllOrdersResult;
 import lv.javaguru.ph.core.domain.Order;
 import lv.javaguru.ph.core.handlers.DomainCommandHandler;
-import lv.javaguru.ph.core.services.users.OrderService;
+import lv.javaguru.ph.core.services.orders.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

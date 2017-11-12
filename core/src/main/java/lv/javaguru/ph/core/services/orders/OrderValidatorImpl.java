@@ -1,4 +1,4 @@
-package lv.javaguru.ph.core.services.users;
+package lv.javaguru.ph.core.services.orders;
 
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
