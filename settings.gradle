@@ -1,8 +1,8 @@
 rootProject.name = 'main.java.lv.javaguru'
 
-include 'application'
-include 'common-dtos'
-include 'core'
+include 'public-api'
+include 'public-app'
 include 'core-api'
-include 'integrations-rest'
+include 'core-app'
+
 
