@@ -1,10 +1,10 @@
-package lv.javaguru.java3.core.jms;
+package lv.javaguru.ph.core.jms;
 
-import lv.javaguru.java3.core.api.jms.JMSRequest;
-import lv.javaguru.java3.core.commands.DomainCommand;
-import lv.javaguru.java3.core.commands.DomainCommandResult;
-import lv.javaguru.java3.core.commons.JsonMapper;
-import lv.javaguru.java3.core.services.CommandExecutor;
+import lv.javaguru.ph.core.api.jms.JMSRequest;
+import lv.javaguru.ph.core.commands.DomainCommand;
+import lv.javaguru.ph.core.commands.DomainCommandResult;
+import lv.javaguru.ph.core.commons.JsonMapper;
+import lv.javaguru.ph.core.services.CommandExecutor;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class JMSRequestHandler {

@@ -1,4 +1,4 @@
-package lv.javaguru.ph.core.api;
+package lv.javaguru.ph.core.commands;
 
 public class VoidResult implements DomainCommandResult {
 

@@ -1,7 +1,7 @@
 package lv.javaguru.ph.core.api.jms;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lv.javaguru.java3.core.api.common.ResponseStatus;
+import lv.javaguru.ph.core.api.common.ResponseStatus;
 
 public class JMSResponse {
 

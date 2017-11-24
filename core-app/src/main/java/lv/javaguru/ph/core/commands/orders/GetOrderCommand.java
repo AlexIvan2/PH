@@ -1,6 +1,6 @@
-package lv.javaguru.ph.core.api.orders;
+package lv.javaguru.ph.core.commands.orders;
 
-import lv.javaguru.ph.core.api.DomainCommand;
+import lv.javaguru.ph.core.commands.DomainCommand;
 
 public class GetOrderCommand implements DomainCommand<GetOrderResult> {
 

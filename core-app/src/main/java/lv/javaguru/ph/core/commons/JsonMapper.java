@@ -1,4 +1,4 @@
-package lv.javaguru.java3.core.commons;
+package lv.javaguru.ph.core.commons;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

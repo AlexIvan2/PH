@@ -1,4 +1,4 @@
-package lv.javaguru.ph.integrations.rest;
+package lv.javaguru.ph.app.rest.controllers;
 
 
 import lv.javaguru.ph.common.dtos.OrderDTO;

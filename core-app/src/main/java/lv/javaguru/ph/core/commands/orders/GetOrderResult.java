@@ -1,8 +1,7 @@
-package lv.javaguru.ph.core.api.orders;
-
+package lv.javaguru.ph.core.commands.orders;
 
 import lv.javaguru.ph.common.dtos.OrderDTO;
-import lv.javaguru.ph.core.api.DomainCommandResult;
+import lv.javaguru.ph.core.commands.DomainCommandResult;
 
 public class GetOrderResult implements DomainCommandResult {
 

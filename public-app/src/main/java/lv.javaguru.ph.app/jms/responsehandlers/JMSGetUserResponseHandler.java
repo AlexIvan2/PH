@@ -1,4 +1,4 @@
-package lv.javaguru.java3.app.jms.responsehandlers;
+package lv.javaguru.ph.app.jms.responsehandlers;
 
 import lv.javaguru.java3.app.common.JsonMapper;
 import lv.javaguru.java3.app.jms.JMSResponseHandler;
