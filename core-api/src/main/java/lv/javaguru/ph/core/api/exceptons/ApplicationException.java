@@ -1,5 +1,7 @@
 package lv.javaguru.ph.core.api.exceptons;
 
+import lv.javaguru.ph.core.api.common.ResponseStatus;
+
 public abstract class ApplicationException extends RuntimeException {
 
     private ResponseStatus resultStatus;

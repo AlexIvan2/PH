@@ -1,7 +1,7 @@
-package lv.javaguru.java3.core.jms;
+package lv.javaguru.ph.core.jms;
 
-import lv.javaguru.java3.core.api.jms.JMSQueues;
-import lv.javaguru.java3.core.api.jms.JMSResponse;
+import lv.javaguru.ph.core.api.jms.JMSQueues;
+import lv.javaguru.ph.core.api.jms.JMSResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;

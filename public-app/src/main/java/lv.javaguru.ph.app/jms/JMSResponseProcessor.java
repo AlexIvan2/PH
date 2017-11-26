@@ -1,9 +1,9 @@
-package lv.javaguru.java3.app.jms;
+package lv.javaguru.ph.app.jms;
 
-import lv.javaguru.java3.app.rest.DeferredResultHolder;
-import lv.javaguru.java3.app.rest.exceptions.HttpStatusMapper;
-import lv.javaguru.java3.core.api.exceptons.InternalServerException;
-import lv.javaguru.java3.core.api.jms.JMSResponse;
+import lv.javaguru.ph.app.rest.DeferredResultHolder;
+import lv.javaguru.ph.app.rest.exceptions.HttpStatusMapper;
+import lv.javaguru.ph.core.api.exceptons.InternalServerException;
+import lv.javaguru.ph.core.api.jms.JMSResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

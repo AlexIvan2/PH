@@ -1,6 +1,6 @@
 package lv.javaguru.ph.core.api;
 
-public class VoidResult implements DomainCommandResult {
+public class VoidResult {
 
     public static final VoidResult INSTANCE = new VoidResult();
 

@@ -1,11 +1,11 @@
-package lv.javaguru.java3.core.jms;
+package lv.javaguru.ph.core.jms;
 
-import lv.javaguru.java3.core.api.common.ResponseStatus;
-import lv.javaguru.java3.core.api.exceptons.InternalServerException;
-import lv.javaguru.java3.core.api.exceptons.ValidationException;
-import lv.javaguru.java3.core.api.jms.JMSRequest;
-import lv.javaguru.java3.core.api.jms.JMSResponse;
-import lv.javaguru.java3.core.commons.JsonMapper;
+import lv.javaguru.ph.core.api.common.ResponseStatus;
+import lv.javaguru.ph.core.api.exceptons.InternalServerException;
+import lv.javaguru.ph.core.api.exceptons.ValidationException;
+import lv.javaguru.ph.core.api.jms.JMSRequest;
+import lv.javaguru.ph.core.api.jms.JMSResponse;
+import lv.javaguru.ph.core.commons.JsonMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

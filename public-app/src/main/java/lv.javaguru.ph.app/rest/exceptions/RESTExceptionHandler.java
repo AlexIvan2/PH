@@ -1,10 +1,10 @@
-package lv.javaguru.java3.app.rest.exceptions;
+package lv.javaguru.ph.app.rest.exceptions;
 
-import lv.javaguru.java3.common.dtos.ExceptionDTO;
-import lv.javaguru.java3.common.dtos.ValidationErrorDTO;
-import lv.javaguru.java3.core.api.exceptons.InternalServerException;
-import lv.javaguru.java3.core.api.exceptons.ValidationError;
-import lv.javaguru.java3.core.api.exceptons.ValidationException;
+import lv.javaguru.ph.common.dtos.ExceptionDTO;
+import lv.javaguru.ph.common.dtos.ValidationErrorDTO;
+import lv.javaguru.ph.core.api.exceptons.InternalServerException;
+import lv.javaguru.ph.core.api.exceptons.ValidationError;
+import lv.javaguru.ph.core.api.exceptons.ValidationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

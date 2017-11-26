@@ -1,0 +1,1076 @@
+2017-11-26 15:22:55,280 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 1040 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 15:22:55,283 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 15:22:55,313 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cbb3d47: startup date [Sun Nov 26 15:22:55 EET 2017]; root of context hierarchy
+2017-11-26 15:22:55,576 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 15:22:56,166 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 15:22:56,176 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 15:22:56,176 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 15:22:56,246 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 15:22:56,246 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 933 ms
+2017-11-26 15:22:56,336 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 15:22:56,336 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 15:22:56,336 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 15:22:56,336 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 15:22:56,336 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 15:22:56,366 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : 144599c3-6115-4495-a423-507e0be1e9df
+2017-11-26 15:22:56,666 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cbb3d47: startup date [Sun Nov 26 15:22:55 EET 2017]; root of context hierarchy
+2017-11-26 15:22:56,706 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 15:22:56,706 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 15:22:56,706 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 15:22:56,706 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 15:22:56,726 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:22:56,726 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:22:56,736 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 15:22:56,756 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:22:56,876 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 15:22:56,886 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 15:22:57,026 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:22:57,046 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:22:57,046 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:22:57,056 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 15:22:57,076 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 15:22:57,076 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.207 seconds (JVM running for 2.766)
+2017-11-26 15:23:26,245 INFO [public-app-http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-26 15:23:26,245 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-26 15:23:26,265 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-26 15:24:49,478 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 11380 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 15:24:49,490 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 15:24:49,549 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b45c0e: startup date [Sun Nov 26 15:24:49 EET 2017]; root of context hierarchy
+2017-11-26 15:24:49,748 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 15:24:50,643 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 15:24:50,653 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 15:24:50,653 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 15:24:50,733 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 15:24:50,733 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1184 ms
+2017-11-26 15:24:50,843 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 15:24:50,843 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 15:24:50,843 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 15:24:50,843 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 15:24:50,843 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 15:24:50,873 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : fc5e37c2-c384-4ecd-a6c1-399f40ef6e22
+2017-11-26 15:24:51,283 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b45c0e: startup date [Sun Nov 26 15:24:49 EET 2017]; root of context hierarchy
+2017-11-26 15:24:51,333 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 15:24:51,333 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 15:24:51,333 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 15:24:51,333 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 15:24:51,363 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:24:51,363 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:24:51,383 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 15:24:51,393 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:24:51,603 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 15:24:51,623 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 15:24:51,773 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:24:51,793 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:24:51,803 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:24:51,813 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 15:24:51,833 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 15:24:51,833 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.657 seconds (JVM running for 3.334)
+2017-11-26 15:24:57,004 INFO [public-app-http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-26 15:24:57,004 INFO [public-app-http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-26 15:24:57,024 INFO [public-app-http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-26 15:25:39,076 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:26:54,981 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:27:30,210 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 11384 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 15:27:30,210 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 15:27:30,251 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73a8da0f: startup date [Sun Nov 26 15:27:30 EET 2017]; root of context hierarchy
+2017-11-26 15:27:30,371 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 15:27:31,295 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 15:27:31,305 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 15:27:31,305 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 15:27:31,385 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 15:27:31,385 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1134 ms
+2017-11-26 15:27:31,495 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 15:27:31,495 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 15:27:31,495 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 15:27:31,495 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 15:27:31,495 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 15:27:31,525 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : c17c309e-e154-4e40-9c6a-96ceff20ae1f
+2017-11-26 15:27:31,975 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73a8da0f: startup date [Sun Nov 26 15:27:30 EET 2017]; root of context hierarchy
+2017-11-26 15:27:32,025 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 15:27:32,025 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 15:27:32,025 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 15:27:32,025 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 15:27:32,055 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:27:32,055 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:27:32,065 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 15:27:32,085 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:27:32,315 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 15:27:32,335 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 15:27:32,485 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:27:32,515 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:27:32,515 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:27:32,535 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 15:27:32,555 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 15:27:32,555 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.637 seconds (JVM running for 3.4)
+2017-11-26 15:27:36,586 INFO [public-app-http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-26 15:27:36,586 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-26 15:27:36,606 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-26 15:27:40,603 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:28:50,095 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:30:38,385 WARN [public-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@6450] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 15:30:38,385 WARN [public-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@6516] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 15:30:38,385 WARN [public-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@6980] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 15:40:00,787 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 11596 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 15:40:00,798 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 15:40:00,873 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b45c0e: startup date [Sun Nov 26 15:40:00 EET 2017]; root of context hierarchy
+2017-11-26 15:40:00,988 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 15:40:01,909 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 15:40:01,919 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 15:40:01,919 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 15:40:01,999 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 15:40:01,999 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1126 ms
+2017-11-26 15:40:02,109 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 15:40:02,109 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 15:40:02,109 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 15:40:02,109 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 15:40:02,119 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 15:40:02,149 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : e2f8dfd0-800e-4d3c-9b7a-74fbfd8d5924
+2017-11-26 15:40:02,529 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b45c0e: startup date [Sun Nov 26 15:40:00 EET 2017]; root of context hierarchy
+2017-11-26 15:40:02,579 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 15:40:02,579 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 15:40:02,579 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 15:40:02,579 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 15:40:02,609 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:40:02,609 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:40:02,619 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 15:40:02,639 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:40:02,839 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 15:40:02,859 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 15:40:03,009 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:40:03,029 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:40:03,039 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:40:03,049 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 15:40:03,069 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 15:40:03,069 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.604 seconds (JVM running for 3.255)
+2017-11-26 15:40:10,561 INFO [public-app-http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-26 15:40:10,561 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-26 15:40:10,571 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2017-11-26 15:40:15,291 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:42:48,905 WARN [public-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@11412] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 15:42:48,905 WARN [public-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@11505] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 15:42:48,925 INFO [public-app-ActiveMQ Task-3] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1054] - Successfully reconnected to tcp://localhost:61616
+2017-11-26 15:42:48,925 INFO [public-app-ActiveMQ Task-3] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1054] - Successfully reconnected to tcp://localhost:61616
+2017-11-26 15:43:03,898 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 2908 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 15:43:03,901 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 15:43:03,928 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11f0a5a1: startup date [Sun Nov 26 15:43:03 EET 2017]; root of context hierarchy
+2017-11-26 15:43:03,990 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 15:43:04,920 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 15:43:04,920 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 15:43:04,920 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 15:43:05,000 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 15:43:05,000 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1072 ms
+2017-11-26 15:43:05,110 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 15:43:05,110 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 15:43:05,110 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 15:43:05,110 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 15:43:05,110 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 15:43:05,140 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : b8b783b4-efe5-42fe-9250-8175b4128c48
+2017-11-26 15:43:05,530 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11f0a5a1: startup date [Sun Nov 26 15:43:03 EET 2017]; root of context hierarchy
+2017-11-26 15:43:05,571 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 15:43:05,581 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 15:43:05,581 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 15:43:05,581 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 15:43:05,611 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:43:05,611 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:43:05,621 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 15:43:05,641 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 15:43:05,851 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 15:43:05,871 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 15:43:06,021 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 15:43:06,041 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:43:06,051 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 15:43:06,061 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 15:43:06,071 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 15:43:06,081 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.514 seconds (JVM running for 3.229)
+2017-11-26 16:02:18,757 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 12420 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 16:02:18,767 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 16:02:18,837 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b45c0e: startup date [Sun Nov 26 16:02:18 EET 2017]; root of context hierarchy
+2017-11-26 16:02:18,979 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 16:02:19,859 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 16:02:19,869 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 16:02:19,869 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 16:02:19,939 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 16:02:19,939 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1102 ms
+2017-11-26 16:02:20,049 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 16:02:20,059 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 16:02:20,059 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 16:02:20,059 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 16:02:20,059 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 16:02:20,089 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : adc8ef1d-5905-48d8-af95-325c50aa849a
+2017-11-26 16:02:20,469 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b45c0e: startup date [Sun Nov 26 16:02:18 EET 2017]; root of context hierarchy
+2017-11-26 16:02:20,519 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 16:02:20,519 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 16:02:20,519 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 16:02:20,519 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 16:02:20,549 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 16:02:20,549 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 16:02:20,569 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 16:02:20,590 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 16:02:20,790 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 16:02:20,810 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 16:02:20,970 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:02:20,980 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 16:02:20,990 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 16:02:21,000 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 16:02:21,020 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 16:02:21,030 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.483 seconds (JVM running for 3.244)
+2017-11-26 16:02:30,243 INFO [public-app-http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-26 16:02:30,243 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-26 16:02:30,263 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-11-26 16:02:36,695 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:02:42,656 WARN [public-app-http-nio-8080-exec-2] l.j.ph.app.rest.DeferredResultHolder [DeferredResultHolder.java:48] - Request timed out. CORRELATION-ID: 7f9c631c-5997-439c-a2b1-cc1f3834bca2.
+2017-11-26 16:03:06,471 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:07,461 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:08,461 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:09,461 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:10,461 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:11,462 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:12,462 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:03:39,229 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:03:48,091 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:04:16,677 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:04:53,035 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:05:05,889 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:05:11,890 WARN [public-app-http-nio-8080-exec-2] l.j.ph.app.rest.DeferredResultHolder [DeferredResultHolder.java:48] - Request timed out. CORRELATION-ID: 4a626e69-42ab-4ed7-9033-b732cb8fa0f9.
+2017-11-26 16:06:37,164 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:38,164 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:39,164 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:40,164 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:41,165 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:42,165 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:42,465 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:43,165 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:43,455 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:44,455 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:45,455 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:46,456 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:47,456 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:06:48,456 WARN [public-app-DefaultMessageListenerContainer-2] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:17,143 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:07:22,214 WARN [public-app-http-nio-8080-exec-7] l.j.ph.app.rest.DeferredResultHolder [DeferredResultHolder.java:48] - Request timed out. CORRELATION-ID: 4d914233-4170-49b5-9471-2805c719d9a9.
+2017-11-26 16:07:47,459 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:48,459 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:49,459 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:50,459 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:51,460 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:52,461 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:53,461 WARN [public-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'public void lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(javax.jms.TextMessage) throws javax.jms.JMSException' threw exception; nested exception is lv.javaguru.ph.core.api.exceptons.InternalServerException
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: lv.javaguru.ph.core.api.exceptons.InternalServerException: null
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl$$Lambda$14/359904342.get(Unknown Source)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:53)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.processFailedResponse(JMSResponseProcessor.java:43)
+	at lv.javaguru.ph.app.jms.JMSResponseProcessorImpl.process(JMSResponseProcessor.java:29)
+	at lv.javaguru.ph.app.jms.JMSResponseReceiver.onMessage(JMSResponseReceiver.java:25)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	... 10 common frames omitted
+2017-11-26 16:07:56,662 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:08:11,015 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:10:14,828 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:10:48,848 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:10:51,738 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:10:56,082 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:12:16,929 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:15:32,571 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:48] - Starting PublicApplication on Alex-PC with PID 10140 (C:\Users\Alex\PH_Gradle\public-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 16:15:32,581 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 16:15:32,636 INFO [public-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e17553a: startup date [Sun Nov 26 16:15:32 EET 2017]; root of context hierarchy
+2017-11-26 16:15:33,020 INFO [public-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 16:15:33,811 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8080 (http)
+2017-11-26 16:15:33,819 INFO [public-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 16:15:33,820 INFO [public-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 16:15:33,891 INFO [public-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 16:15:33,891 INFO [public-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1255 ms
+2017-11-26 16:15:34,005 INFO [public-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 16:15:34,005 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 16:15:34,005 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 16:15:34,015 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 16:15:34,015 INFO [public-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 16:15:34,045 INFO [public-app-main] l.j.p.a.c.ApplicationCorrelationIdHolder [ApplicationCorrelationIdHolder.java:20] - Application CORRELATION ID is set to : 0e82c9d8-e196-4b9d-a9f7-3bebfb60ad45
+2017-11-26 16:15:34,433 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e17553a: startup date [Sun Nov 26 16:15:32 EET 2017]; root of context hierarchy
+2017-11-26 16:15:34,483 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order],methods=[POST]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.register(lv.javaguru.ph.common.dtos.OrderDTO)
+2017-11-26 16:15:34,483 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/api/order/{orderId}],methods=[GET]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.http.ResponseEntity> lv.javaguru.ph.app.rest.controllers.OrderResourceImpl.getById(java.lang.Long)
+2017-11-26 16:15:34,483 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 16:15:34,483 INFO [public-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 16:15:34,515 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 16:15:34,515 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 16:15:34,535 INFO [public-app-main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [ExceptionHandlerExceptionResolver.java:273] - Detected @ExceptionHandler methods in RESTExceptionHandler
+2017-11-26 16:15:34,555 INFO [public-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 16:15:34,766 INFO [public-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 16:15:34,786 INFO [public-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 16:15:34,943 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:15:34,963 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2017-11-26 16:15:34,973 INFO [public-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2017-11-26 16:15:34,983 INFO [public-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 16:15:34,995 INFO [public-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8080 (http)
+2017-11-26 16:15:35,005 INFO [public-app-main] lv.javaguru.ph.app.PublicApplication [StartupInfoLogger.java:57] - Started PublicApplication in 2.736 seconds (JVM running for 3.385)
+2017-11-26 16:15:44,935 INFO [public-app-http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-26 16:15:44,935 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-26 16:15:44,945 INFO [public-app-http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2017-11-26 16:15:45,029 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 16:15:55,748 INFO [public-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616

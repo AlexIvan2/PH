@@ -1,6 +1,6 @@
-package lv.javaguru.java3.app.rest.exceptions;
+package lv.javaguru.ph.app.rest.exceptions;
 
-import lv.javaguru.java3.core.api.common.ResponseStatus;
+import lv.javaguru.ph.core.api.common.ResponseStatus;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 

@@ -1,8 +1,8 @@
 package lv.javaguru.ph.core.handlers.orders;
 
 import lv.javaguru.ph.common.dtos.OrderDTO;
-import lv.javaguru.ph.core.api.orders.UpdateOrderCommand;
-import lv.javaguru.ph.core.api.orders.UpdateOrderResult;
+import lv.javaguru.ph.core.commands.orders.UpdateOrderCommand;
+import lv.javaguru.ph.core.commands.orders.UpdateOrderResult;
 import lv.javaguru.ph.core.domain.Order;
 import lv.javaguru.ph.core.handlers.DomainCommandHandler;
 import lv.javaguru.ph.core.services.orders.OrderService;

@@ -2,9 +2,8 @@ package lv.javaguru.ph.core.commands.orders;
 
 
 import lv.javaguru.ph.common.dtos.OrderDTO;
-import lv.javaguru.ph.core.api.DomainCommandResult;
 
-public class UpdateOrderResult implements DomainCommandResult {
+public class UpdateOrderResult {
 
     private OrderDTO order;
     private String message;

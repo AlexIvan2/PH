@@ -1,6 +1,6 @@
-package lv.javaguru.java3.app.rest;
+package lv.javaguru.ph.app.rest;
 
-import lv.javaguru.java3.core.api.jms.JMSRequest;
+import lv.javaguru.ph.core.api.jms.JMSRequest;
 import org.slf4j.Logger;
 import org.springframework.context.event.ContextClosedEvent;
 import org.springframework.context.event.EventListener;

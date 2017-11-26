@@ -1,4 +1,4 @@
-package lv.javaguru.java3.app.rest;
+package lv.javaguru.ph.app.rest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

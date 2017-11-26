@@ -1,11 +1,9 @@
 package lv.javaguru.ph.core.commands.orders;
 
 
-import lv.javaguru.ph.core.api.DomainCommand;
-
 import java.util.Date;
 
-public class UpdateOrderCommand implements DomainCommand<UpdateOrderResult> {
+public class UpdateOrderCommand {
 
     private Long orderId;
 

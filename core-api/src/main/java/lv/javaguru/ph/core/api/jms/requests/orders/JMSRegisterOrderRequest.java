@@ -5,11 +5,10 @@ import lv.javaguru.ph.common.dtos.OrderDTO;
 import lv.javaguru.ph.core.api.jms.SupportedCommandId;
 import lv.javaguru.ph.core.api.jms.requests.JMSAPIRequest;
 
-public class JMSRegisterUserRequest implements JMSAPIRequest {
+public class JMSRegisterOrderRequest implements JMSAPIRequest {
 
     @JsonProperty("order")
     private OrderDTO orderDTO;
-
 
     @Override
     public String getCommandId() {
@@ -20,7 +19,7 @@ public class JMSRegisterUserRequest implements JMSAPIRequest {
         return orderDTO;
     }
 
-    public void setUserDTO(OrderDTO orderDTO) {
+    public void setOrderDTO(OrderDTO orderDTO) {
         this.orderDTO = orderDTO;
     }
 }

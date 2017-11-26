@@ -1,6 +1,6 @@
-package lv.javaguru.java3.app.jms;
+package lv.javaguru.ph.app.jms;
 
-import lv.javaguru.java3.core.api.jms.JMSResponse;
+import lv.javaguru.ph.core.api.jms.JMSResponse;
 import org.springframework.http.ResponseEntity;
 
 public interface JMSResponseHandler {

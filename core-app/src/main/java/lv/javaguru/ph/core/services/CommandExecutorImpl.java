@@ -1,8 +1,7 @@
 package lv.javaguru.ph.core.services;
 
-import lv.javaguru.ph.core.api.CommandExecutor;
-import lv.javaguru.ph.core.api.DomainCommand;
-import lv.javaguru.ph.core.api.DomainCommandResult;
+import lv.javaguru.ph.core.commands.DomainCommand;
+import lv.javaguru.ph.core.commands.DomainCommandResult;
 import lv.javaguru.ph.core.handlers.DomainCommandHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

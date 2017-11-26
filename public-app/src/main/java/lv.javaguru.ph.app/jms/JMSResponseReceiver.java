@@ -1,8 +1,8 @@
-package lv.javaguru.java3.app.jms;
+package lv.javaguru.ph.app.jms;
 
-import lv.javaguru.java3.app.common.JsonMapper;
-import lv.javaguru.java3.core.api.jms.JMSQueues;
-import lv.javaguru.java3.core.api.jms.JMSResponse;
+import lv.javaguru.ph.app.common.JsonMapper;
+import lv.javaguru.ph.core.api.jms.JMSQueues;
+import lv.javaguru.ph.core.api.jms.JMSResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;

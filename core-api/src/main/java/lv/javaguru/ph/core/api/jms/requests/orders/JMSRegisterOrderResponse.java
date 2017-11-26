@@ -3,7 +3,7 @@ package lv.javaguru.ph.core.api.jms.requests.orders;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lv.javaguru.ph.common.dtos.OrderDTO;
 
-public class JMSRegisterUserResponse {
+public class JMSRegisterOrderResponse {
 
     @JsonProperty("order")
     private OrderDTO orderDTO;

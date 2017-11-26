@@ -1,4 +1,4 @@
-package lv.javaguru.java3.app.jms;
+package lv.javaguru.ph.app.jms;
 
 import org.springframework.stereotype.Component;
 

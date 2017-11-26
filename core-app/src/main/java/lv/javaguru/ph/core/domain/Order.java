@@ -7,9 +7,9 @@ import java.util.Date;
 @Table(name="orders")
 public class Order extends BaseEntity{
 
+
     @Id
-    @GeneratedValue(generator = "orders_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "orders_seq", sequenceName = "orders_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id", unique=true, nullable=false)
     private Long id;
 

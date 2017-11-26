@@ -1,9 +1,7 @@
 package lv.javaguru.ph.core.commands.orders;
 
 
-import lv.javaguru.ph.core.api.DomainCommandResult;
-
-public class UndoOrderResult implements DomainCommandResult {
+public class UndoOrderResult {
 
     private String message;
 

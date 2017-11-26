@@ -1,9 +1,9 @@
-package lv.javaguru.java3.app.jms;
+package lv.javaguru.ph.app.jms;
 
-import lv.javaguru.java3.app.common.ApplicationCorrelationIdHolder;
-import lv.javaguru.java3.app.common.JsonMapper;
-import lv.javaguru.java3.core.api.jms.JMSQueues;
-import lv.javaguru.java3.core.api.jms.JMSRequest;
+import lv.javaguru.ph.app.common.ApplicationCorrelationIdHolder;
+import lv.javaguru.ph.app.common.JsonMapper;
+import lv.javaguru.ph.core.api.jms.JMSQueues;
+import lv.javaguru.ph.core.api.jms.JMSRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;

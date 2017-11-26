@@ -1,4 +1,4 @@
-package lv.javaguru.java3.app.common;
+package lv.javaguru.ph.app.common;
 
 import org.slf4j.Logger;
 import org.springframework.stereotype.Component;
