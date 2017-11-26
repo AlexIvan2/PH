@@ -1534,3 +1534,934 @@ insert into orders (created_at, modified_at, version, activation_date, msisdn, r
 2017-11-26 16:15:24,324 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
 2017-11-26 16:15:24,334 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
 2017-11-26 16:15:24,344 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.495 seconds (JVM running for 6.225)
+2017-11-26 17:08:06,976 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 15176 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:08:06,976 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:08:07,016 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@545f80bf: startup date [Sun Nov 26 17:08:07 EET 2017]; root of context hierarchy
+2017-11-26 17:08:07,158 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:08:08,577 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:08:08,587 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:08:08,587 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:08:08,697 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:08:08,697 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1681 ms
+2017-11-26 17:08:08,828 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:08:08,840 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:08:08,841 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:08:08,841 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:08:08,841 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:08:09,414 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:08:09,996 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:08:09,996 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:08:10,006 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:08:10,006 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 0ms
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 10ms
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 0ms
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:08:10,016 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 0ms
+2017-11-26 17:08:10,027 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:08:10,027 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 1ms
+2017-11-26 17:08:10,028 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:08:10,128 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:08:10,148 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:08:10,229 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:08:10,229 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:08:10,239 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:08:10,279 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:08:10,414 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:08:10,926 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:08:10,978 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:08:12,414 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@545f80bf: startup date [Sun Nov 26 17:08:07 EET 2017]; root of context hierarchy
+2017-11-26 17:08:12,495 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:08:12,495 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:08:17,037 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:08:17,037 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:08:17,346 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:08:18,894 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:08:18,914 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:08:19,107 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:08:19,137 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:08:19,147 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:08:19,177 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:08:19,197 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:08:19,207 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 12.867 seconds (JVM running for 13.837)
+2017-11-26 17:09:05,811 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:09:39,300 INFO [core-app-DefaultMessageListenerContainer-2] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:13:35,103 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 7140 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:13:35,113 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:13:35,143 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ba63fe5: startup date [Sun Nov 26 17:13:35 EET 2017]; root of context hierarchy
+2017-11-26 17:13:35,265 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:13:36,518 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:13:36,530 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:13:36,530 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:13:36,630 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:13:36,630 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1487 ms
+2017-11-26 17:13:36,751 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:13:36,761 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:13:36,761 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:13:36,761 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:13:36,761 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:13:37,287 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:13:37,838 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:13:37,838 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:13:37,855 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:13:37,855 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 2ms
+2017-11-26 17:13:37,857 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:13:37,857 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 0ms
+2017-11-26 17:13:37,857 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 10ms
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 0ms
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 0ms
+2017-11-26 17:13:37,867 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:13:37,968 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:13:37,978 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:13:38,060 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:13:38,070 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:13:38,070 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:13:38,120 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:13:38,241 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:13:38,670 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:13:38,721 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:13:39,387 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ba63fe5: startup date [Sun Nov 26 17:13:35 EET 2017]; root of context hierarchy
+2017-11-26 17:13:39,447 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:13:39,447 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:13:39,478 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:13:39,478 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:13:39,518 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:13:39,848 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:13:39,868 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:13:40,020 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:13:40,082 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:13:40,092 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:13:40,102 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:13:40,122 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:13:40,122 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.659 seconds (JVM running for 6.523)
+2017-11-26 17:15:13,443 INFO [core-app-DefaultMessageListenerContainer-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:15:52,899 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:16:18,698 ERROR [core-app-DefaultMessageListenerContainer-2] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:18:39,979 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 12044 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:18:39,979 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:18:40,019 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d52e3ef: startup date [Sun Nov 26 17:18:40 EET 2017]; root of context hierarchy
+2017-11-26 17:18:40,135 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:18:41,361 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:18:41,361 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:18:41,371 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:18:41,451 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:18:41,451 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1432 ms
+2017-11-26 17:18:41,564 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:18:41,574 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:18:41,574 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:18:41,574 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:18:41,574 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:18:42,074 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:18:42,614 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:18:42,614 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:18:42,624 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:18:42,624 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 0ms
+2017-11-26 17:18:42,634 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:18:42,634 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 0ms
+2017-11-26 17:18:42,634 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:18:42,634 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 0ms
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 0ms
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 0ms
+2017-11-26 17:18:42,644 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:18:42,745 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:18:42,755 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:18:42,805 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:18:42,815 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:18:42,815 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:18:42,856 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:18:42,962 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:18:43,285 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:18:43,335 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:18:44,027 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d52e3ef: startup date [Sun Nov 26 17:18:40 EET 2017]; root of context hierarchy
+2017-11-26 17:18:44,089 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:18:44,089 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:18:44,139 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:18:44,139 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:18:44,169 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:18:44,468 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:18:44,488 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:18:44,650 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:18:44,670 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:18:44,680 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:18:44,690 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:18:44,712 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:18:44,712 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.391 seconds (JVM running for 6.114)
+2017-11-26 17:19:15,594 INFO [core-app-DefaultMessageListenerContainer-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:19:44,442 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:20:05,392 ERROR [core-app-DefaultMessageListenerContainer-2] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:20:39,006 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:21:21,407 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 14664 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:21:21,407 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:21:21,437 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ba63fe5: startup date [Sun Nov 26 17:21:21 EET 2017]; root of context hierarchy
+2017-11-26 17:21:21,547 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:21:22,717 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:21:22,717 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:21:22,717 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:21:22,807 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:21:22,807 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1370 ms
+2017-11-26 17:21:22,937 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:21:22,937 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:21:22,937 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:21:22,937 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:21:22,937 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:21:23,437 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:21:23,937 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:21:23,937 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:21:23,947 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:21:23,947 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 0ms
+2017-11-26 17:21:23,957 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:21:23,957 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 0ms
+2017-11-26 17:21:23,957 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:21:23,957 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 0ms
+2017-11-26 17:21:23,957 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:21:23,957 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:21:23,967 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:21:23,967 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 10ms
+2017-11-26 17:21:23,967 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:21:23,967 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 0ms
+2017-11-26 17:21:23,967 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:21:24,057 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:21:24,067 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:21:24,127 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:21:24,127 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:21:24,127 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:21:24,167 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:21:24,267 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:21:24,597 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:21:24,637 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:21:25,287 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ba63fe5: startup date [Sun Nov 26 17:21:21 EET 2017]; root of context hierarchy
+2017-11-26 17:21:25,347 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:21:25,347 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:21:25,377 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:21:25,377 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:21:25,417 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:21:25,767 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:21:25,787 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:21:25,967 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:21:26,027 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:21:26,037 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:21:26,047 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:21:26,057 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:21:26,067 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.296 seconds (JVM running for 6.097)
+2017-11-26 17:21:55,865 INFO [core-app-DefaultMessageListenerContainer-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:23:47,709 WARN [core-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@50957] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.io.EOFException: null
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:23:47,719 INFO [core-app-ActiveMQ Task-3] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1054] - Successfully reconnected to tcp://localhost:61616
+2017-11-26 17:23:47,719 WARN [core-app-ActiveMQ Session Task-2] o.a.activemq.ActiveMQMessageConsumer [ActiveMQMessageConsumer.java:1453] - ID:Alex-PC-50956-1511709685807-1:1:2:1 delivering duplicate ActiveMQTextMessage {commandId = 5, responseRequired = true, messageId = ID:Alex-PC-51074-1511709700769-1:2:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:Alex-PC-51074-1511709700769-1:2:1:1, destination = queue://public-app-request-queue, transactionId = null, expiration = 0, timestamp = 1511709712301, arrival = 0, brokerInTime = 1511709712301, brokerOutTime = 1511709827719, correlationId = f6c43103-7984-4d54-90f3-160b645cefc8, replyTo = null, persistent = true, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@5a7080f8, marshalledProperties = null, dataStructure = null, redeliveryCounter = 1, size = 0, properties = null, readOnlyProperties = true, readOnlyBody = true, droppable = false, jmsXGroupFirstForConsumer = false, text = {"command_id":"GetOrderByMsisdn","correlation...3456789\"}"}}, pending transaction completion on ID:Alex-PC-50956-1511709685807-1:1:1:1 will rollback
+2017-11-26 17:23:47,779 WARN [core-app-DefaultMessageListenerContainer-1] o.a.activemq.ActiveMQMessageConsumer [ActiveMQMessageConsumer.java:1180] - rolling back transaction (TX:ID:Alex-PC-50956-1511709685807-1:1:1) post failover recovery. 1 previously delivered message(s) not replayed to consumer: ID:Alex-PC-50956-1511709685807-1:1:1:1
+2017-11-26 17:23:50,479 WARN [core-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [AbstractMessageListenerContainer.java:936] - Execution of JMS message listener failed, and no ErrorHandler has been set.
+javax.jms.TransactionRolledBackException: rolling back transaction (TX:ID:Alex-PC-50956-1511709685807-1:1:1) post failover recovery. 1 previously delivered message(s) not replayed to consumer: ID:Alex-PC-50956-1511709685807-1:1:1:1
+	at org.apache.activemq.ActiveMQMessageConsumer.rollbackOnFailedRecoveryRedelivery(ActiveMQMessageConsumer.java:1181)
+	at org.apache.activemq.ActiveMQMessageConsumer.acknowledge(ActiveMQMessageConsumer.java:1115)
+	at org.apache.activemq.ActiveMQMessageConsumer$5.beforeEnd(ActiveMQMessageConsumer.java:1078)
+	at org.apache.activemq.TransactionContext.beforeEnd(TransactionContext.java:207)
+	at org.apache.activemq.TransactionContext.commit(TransactionContext.java:305)
+	at org.apache.activemq.ActiveMQSession.commit(ActiveMQSession.java:582)
+	at org.apache.activemq.jms.pool.PooledSession.commit(PooledSession.java:167)
+	at org.springframework.jms.support.JmsUtils.commitIfNecessary(JmsUtils.java:217)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.commitIfNecessary(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:665)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:23:50,479 WARN [core-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [DefaultMessageListenerContainer.java:880] - Setup of JMS message listener invoker failed for destination 'public-app-request-queue' - trying to recover. Cause: rolling back transaction (TX:ID:Alex-PC-50956-1511709685807-1:1:1) post failover recovery. 1 previously delivered message(s) not replayed to consumer: ID:Alex-PC-50956-1511709685807-1:1:1:1
+2017-11-26 17:23:50,489 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:23:50,489 INFO [core-app-DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer [DefaultMessageListenerContainer.java:931] - Successfully refreshed JMS Connection
+2017-11-26 17:24:18,634 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 12040 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:24:18,644 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:24:18,684 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77b325b3: startup date [Sun Nov 26 17:24:18 EET 2017]; root of context hierarchy
+2017-11-26 17:24:18,804 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:24:19,994 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:24:20,004 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:24:20,004 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:24:20,084 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:24:20,094 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1410 ms
+2017-11-26 17:24:20,204 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:24:20,214 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:24:20,214 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:24:20,214 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:24:20,214 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:24:20,705 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:24:21,237 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:24:21,237 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:24:21,247 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:24:21,247 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 0ms
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 10ms
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 0ms
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:24:21,257 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 0ms
+2017-11-26 17:24:21,267 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:24:21,267 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 0ms
+2017-11-26 17:24:21,267 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:24:21,357 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:24:21,367 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:24:21,427 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:24:21,427 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:24:21,427 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:24:21,467 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:24:21,567 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:24:21,897 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:24:21,937 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:24:22,587 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77b325b3: startup date [Sun Nov 26 17:24:18 EET 2017]; root of context hierarchy
+2017-11-26 17:24:22,647 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:24:22,657 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:24:22,697 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:24:22,697 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:24:22,737 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:24:23,047 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:24:23,067 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:24:23,227 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:24:23,247 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:24:23,257 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:24:23,267 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:24:23,287 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:24:23,287 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.445 seconds (JVM running for 6.144)
+2017-11-26 17:24:40,672 INFO [core-app-DefaultMessageListenerContainer-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:27:28,634 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 14836 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:27:28,634 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:27:28,674 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a415aa9: startup date [Sun Nov 26 17:27:28 EET 2017]; root of context hierarchy
+2017-11-26 17:27:28,784 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:27:30,014 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:27:30,024 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:27:30,024 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:27:30,104 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:27:30,104 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1430 ms
+2017-11-26 17:27:30,224 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:27:30,224 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:27:30,224 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:27:30,224 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:27:30,224 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:27:30,755 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:27:31,275 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:27:31,275 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:27:31,285 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:27:31,285 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 0ms
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 10ms
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 0ms
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 0ms
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:27:31,295 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 0ms
+2017-11-26 17:27:31,305 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:27:31,395 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:27:31,405 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:27:31,465 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:27:31,465 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:27:31,465 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:27:31,505 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:27:31,615 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:27:31,935 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:27:31,985 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:27:32,625 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a415aa9: startup date [Sun Nov 26 17:27:28 EET 2017]; root of context hierarchy
+2017-11-26 17:27:32,705 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:27:32,705 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:27:32,735 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:27:32,735 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:27:32,775 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:27:33,095 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:27:33,115 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:27:33,265 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:27:33,285 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:27:33,295 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:27:33,305 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:27:33,315 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:27:33,325 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.34 seconds (JVM running for 6.053)
+2017-11-26 17:27:48,043 INFO [core-app-DefaultMessageListenerContainer-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:29:13,798 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:29:28,728 ERROR [core-app-DefaultMessageListenerContainer-2] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:29:56,413 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:30:22,842 ERROR [core-app-DefaultMessageListenerContainer-2] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:30:44,994 ERROR [core-app-DefaultMessageListenerContainer-1] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:30:48,082 ERROR [core-app-DefaultMessageListenerContainer-2] l.j.p.c.jms.JMSRequestExecutorImpl [JMSRequestExecutor.java:39] - Runtime exception
+java.lang.NullPointerException: null
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:26)
+	at lv.javaguru.ph.core.handlers.orders.GetAllOrdersCommandHandler.execute(GetAllOrdersCommandHandler.java:15)
+	at lv.javaguru.ph.core.services.CommandExecutorImpl.execute(CommandExecutorImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy92.execute(Unknown Source)
+	at lv.javaguru.ph.core.jms.JMSRequestHandler.executeCoreCommand(JMSRequestHandler.java:30)
+	at lv.javaguru.ph.core.jms.handlers.JMSGetOrdersByMsisdnRequestHandler.process(JMSGetOrdersByMsisdnRequestHandler.java:29)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.selectHandlerAndProcessRequest(JMSRequestExecutor.java:49)
+	at lv.javaguru.ph.core.jms.JMSRequestExecutorImpl.execute(JMSRequestExecutor.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.processRequest(JMSRequestReceiver.java:30)
+	at lv.javaguru.ph.core.jms.JMSRequestReceiver.onMessage(JMSRequestReceiver.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:180)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:112)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:104)
+	at org.springframework.jms.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:69)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:721)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:681)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:317)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:255)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1166)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1158)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1055)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:31:25,365 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:48] - Starting CoreApplication on Alex-PC with PID 12960 (C:\Users\Alex\PH_Gradle\core-app\out\production\classes started by Alex in C:\Users\Alex\PH_Gradle)
+2017-11-26 17:31:25,368 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [SpringApplication.java:593] - No active profile set, falling back to default profiles: default
+2017-11-26 17:31:25,399 INFO [core-app-main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f4d9395: startup date [Sun Nov 26 17:31:25 EET 2017]; root of context hierarchy
+2017-11-26 17:31:25,511 INFO [core-app-background-preinit] o.h.validator.internal.util.Version [Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2017-11-26 17:31:26,703 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] - Tomcat initialized with port(s): 8081 (http)
+2017-11-26 17:31:26,713 INFO [core-app-main] o.a.catalina.core.StandardService [DirectJDKLog.java:179] - Starting service [Tomcat]
+2017-11-26 17:31:26,713 INFO [core-app-main] o.a.catalina.core.StandardEngine [DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-11-26 17:31:26,804 INFO [core-app-localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2017-11-26 17:31:26,804 INFO [core-app-localhost-startStop-1] o.s.web.context.ContextLoader [EmbeddedWebApplicationContext.java:276] - Root WebApplicationContext: initialization completed in 1405 ms
+2017-11-26 17:31:26,929 INFO [core-app-localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-26 17:31:26,929 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-26 17:31:26,929 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-26 17:31:26,929 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-26 17:31:26,929 INFO [core-app-localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-26 17:31:27,456 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully acquired change log lock
+2017-11-26 17:31:27,984 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2017-11-26 17:31:27,984 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Reading from PUBLIC.DATABASECHANGELOG
+2017-11-26 17:31:27,994 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: Sequence orders_seq created
+2017-11-26 17:31:27,994 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::1::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::1::alex ran successfully in 0ms
+2017-11-26 17:31:27,994 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: Table orders created
+2017-11-26 17:31:27,994 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::2::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::2::alex ran successfully in 0ms
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: New row inserted into orders
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::3::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::3::alex ran successfully in 0ms
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: New row inserted into orders
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::4::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::4::alex ran successfully in 0ms
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: New row inserted into orders
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::5::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::5::alex ran successfully in 0ms
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: New row inserted into orders
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - classpath:/liquibase/db.changelog-master.xml: liquibase/changelogs/db.changelog-1.0.xml::6::alex: ChangeSet liquibase/changelogs/db.changelog-1.0.xml::6::alex ran successfully in 0ms
+2017-11-26 17:31:28,004 INFO [core-app-main] liquibase [CommonsLoggingLiquibaseLogger.java:92] - Successfully released change log lock
+2017-11-26 17:31:28,096 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:31:28,106 INFO [core-app-main] o.h.jpa.internal.util.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-26 17:31:28,166 INFO [core-app-main] org.hibernate.Version [Version.java:37] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-26 17:31:28,166 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:213] - HHH000206: hibernate.properties not found
+2017-11-26 17:31:28,166 INFO [core-app-main] org.hibernate.cfg.Environment [Environment.java:317] - HHH000021: Bytecode provider name : javassist
+2017-11-26 17:31:28,206 INFO [core-app-main] o.h.annotations.common.Version [JavaReflectionManager.java:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-26 17:31:28,318 INFO [core-app-main] org.hibernate.dialect.Dialect [Dialect.java:156] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-26 17:31:28,644 INFO [core-app-main] o.h.tool.hbm2ddl.SchemaValidator [SchemaValidator.java:69] - HHH000229: Running schema validator
+2017-11-26 17:31:28,694 INFO [core-app-main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-26 17:31:29,358 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f4d9395: startup date [Sun Nov 26 17:31:25 EET 2017]; root of context hierarchy
+2017-11-26 17:31:29,419 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-26 17:31:29,419 INFO [core-app-main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-26 17:31:29,449 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:31:29,449 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:31:29,491 INFO [core-app-main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-26 17:31:29,814 INFO [core-app-main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] - Registering beans for JMX exposure on startup
+2017-11-26 17:31:29,834 INFO [core-app-main] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:343] - Starting beans in phase 2147483647
+2017-11-26 17:31:29,995 INFO [core-app-ActiveMQ Task-1] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1052] - Successfully connected to tcp://localhost:61616
+2017-11-26 17:31:30,015 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:31:30,025 INFO [core-app-main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8081"]
+2017-11-26 17:31:30,035 INFO [core-app-main] o.a.tomcat.util.net.NioSelectorPool [DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2017-11-26 17:31:30,057 INFO [core-app-main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] - Tomcat started on port(s): 8081 (http)
+2017-11-26 17:31:30,057 INFO [core-app-main] lv.javaguru.ph.core.CoreApplication [StartupInfoLogger.java:57] - Started CoreApplication in 5.228 seconds (JVM running for 6.252)
+2017-11-26 17:32:41,274 INFO [core-app-DefaultMessageListenerContainer-1] o.h.h.i.QueryTranslatorFactoryInitiator [QueryTranslatorFactoryInitiator.java:47] - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-26 17:37:57,726 WARN [core-app-ActiveMQ Transport: tcp://localhost/127.0.0.1:61616@55048] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:280] - Transport (tcp://localhost:61616) failed , attempting to automatically reconnect: {}
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:745)
+2017-11-26 17:38:18,020 WARN [core-app-ActiveMQ Task-3] o.a.a.t.failover.FailoverTransport [FailoverTransport.java:1100] - Failed to connect to [tcp://localhost:61616] after: 10 attempt(s) continuing to retry.

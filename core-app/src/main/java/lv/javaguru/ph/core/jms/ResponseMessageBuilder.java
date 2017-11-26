@@ -20,7 +20,7 @@ class ResponseMessageBuilderImpl implements ResponseMessageBuilder {
 
     @Autowired private JsonMapper jsonMapper;
 
-    private static final Long JMS_REQUEST_TIMEOUT = 5000L;
+    private static final Long JMS_REQUEST_TIMEOUT = 50000L;
 
     @Override
     public TextMessage build(Session session,

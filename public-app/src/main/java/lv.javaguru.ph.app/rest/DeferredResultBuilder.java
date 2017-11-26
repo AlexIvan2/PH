@@ -12,7 +12,7 @@ public interface DeferredResultBuilder {
 @Component
 class DeferredResultBuilderImpl implements DeferredResultBuilder {
 
-    private static final Long JMS_REQUEST_TIMEOUT = 5000L; // milliseconds
+    private static final Long JMS_REQUEST_TIMEOUT = 50000L; // milliseconds
 
     @Override
     public DeferredResult<ResponseEntity> build() {

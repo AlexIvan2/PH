@@ -4,11 +4,15 @@ package lv.javaguru.ph.app.rest.controllers;
 import lv.javaguru.ph.app.jms.JMSRequestProcessor;
 import lv.javaguru.ph.common.dtos.OrderDTO;
 import lv.javaguru.ph.core.api.jms.requests.orders.JMSGetOrderByIdRequest;
+import lv.javaguru.ph.core.api.jms.requests.orders.JMSGetOrdersByMsisdnRequest;
+import lv.javaguru.ph.core.api.jms.requests.orders.JMSGetOrdersRequest;
 import lv.javaguru.ph.core.api.jms.requests.orders.JMSRegisterOrderRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.async.DeferredResult;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
@@ -17,12 +21,11 @@ public class OrderResourceImpl {
     @Autowired
     private JMSRequestProcessor jmsRequestProcessor;
 
-//    @RequestMapping(value = "/orders", method = RequestMethod.GET)
-//    public ResponseEntity<List<OrderDTO>> getAllOrders() {
-//        GetAllOrdersCommand command = new GetAllOrdersCommand();
-//        GetAllOrdersResult result = commandExecutor.execute(command);
-//        return ResponseEntity.ok(result.getAllOrders());
-//    }
+    @RequestMapping(value = "/orders", method = RequestMethod.GET)
+    public DeferredResult<ResponseEntity> getAllOrders() {
+        JMSGetOrdersRequest jmsRequest = new JMSGetOrdersRequest();
+        return jmsRequestProcessor.process(jmsRequest);
+    }
 
     @RequestMapping(value = "/order/{orderId}", method = RequestMethod.GET)
     public DeferredResult<ResponseEntity> getById(@PathVariable("orderId") Long orderId) {
@@ -31,12 +34,12 @@ public class OrderResourceImpl {
         return jmsRequestProcessor.process(jmsRequest);
     }
 
-//    @RequestMapping(value = "/orders/{msisdn}", method = RequestMethod.GET)
-//    public ResponseEntity<List<OrderDTO>> getByMsisdn(@PathVariable("msisdn") String msisdn) {
-//        GetAllOrdersCommand command = new GetAllOrdersCommand(msisdn);
-//        GetAllOrdersResult result = commandExecutor.execute(command);
-//        return ResponseEntity.ok(result.getAllOrders());
-//    }
+    @RequestMapping(value = "/orders/{msisdn}", method = RequestMethod.GET)
+    public DeferredResult<ResponseEntity> getByMsisdn(@PathVariable("msisdn") String msisdn) {
+        JMSGetOrdersByMsisdnRequest jmsRequest = new JMSGetOrdersByMsisdnRequest();
+        jmsRequest.setMsisdn(msisdn);
+        return jmsRequestProcessor.process(jmsRequest);
+    }
 
     @RequestMapping(value = "/order", method = RequestMethod.POST)
     public DeferredResult<ResponseEntity> register(@RequestBody OrderDTO orderDTO) {
